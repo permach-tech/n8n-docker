@@ -62,10 +62,8 @@ sudo usermod -aG docker $USER
 <details>
 <summary>Install n8n</summary>
 <br>
-
-### Create a directory for n8n:
 The official docs for a self-hosted Docker instance can be found [here](https://docs.n8n.io/hosting/installation/docker/#starting-n8n/).
-
+### Create a directory for n8n:
 ```bash
 mkdir n8n
 cd n8n
