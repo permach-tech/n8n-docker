@@ -62,8 +62,10 @@ sudo usermod -aG docker $USER
 <details>
 <summary>Install n8n</summary>
 <br>
+
 The official docs for a self-hosted Docker instance can be found [here](https://docs.n8n.io/hosting/installation/docker/#starting-n8n/).
 ### Create a directory for n8n:
+
 ```bash
 mkdir n8n
 cd n8n
@@ -74,7 +76,7 @@ cd n8n
 > A challenge I had was getting webhooks to work correctly. Some of the docs recommend starting the n8n instance with the `-tunnel` environment variable; however, I was unable to get this working.
 
 > I was running my n8n instance behind a Cloudflare tunnel, so I had to run the Docker command with the environment variable `-e WEBHOOK_URL={your tunnel URL}`. If you are using a reverse proxy like NGINX or Traefik, you may need to set this variable.  
-> A list of environment variables can be found [here](https://docs.n8n.io/hosting/configuration/environment-variables/endpoints/).
+>A list of environment variables can be found [here](https://docs.n8n.io/hosting/configuration/environment-variables/endpoints/).
 
 ### Run the Docker container in detached mode with the environment variable:
 ```bash
