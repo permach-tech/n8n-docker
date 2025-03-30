@@ -70,13 +70,13 @@ The official docs for a self-hosted Docker instance can be found [here](https://
 mkdir n8n
 cd n8n
 ```
+> **ℹ️ Notice**  
+> n8n uses SQLite by default, but you can use Postgres or MySQL (recommended). For simplicity, we will use SQLite.
 
-n8n uses SQLite by default, but you can use Postgres or MySQL (recommended). For simplicity, we will use SQLite.
+> A challenge I had was getting webhooks to work correctly. Some of the docs recommend starting the n8n instance with the `-tunnel` environment variable; however, I was unable to get this working.
 
-A challenge I had was getting webhooks to work correctly. Some of the docs recommend starting the n8n instance with the `-tunnel` environment variable; however, I was unable to get this working.
-
-I was running my n8n instance behind a Cloudflare tunnel, so I had to run the Docker command with the environment variable `-e WEBHOOK_URL={your tunnel URL}`. If you are using a reverse proxy like NGINX or Traefik, you may need to set this variable.  
-A list of environment variables can be found [here](https://docs.n8n.io/hosting/configuration/environment-variables/endpoints/).
+> I was running my n8n instance behind a Cloudflare tunnel, so I had to run the Docker command with the environment variable `-e WEBHOOK_URL={your tunnel URL}`. If you are using a reverse proxy like NGINX or Traefik, you may need to set this variable.  
+> A list of environment variables can be found [here](https://docs.n8n.io/hosting/configuration/environment-variables/endpoints/).
 
 ### Run the Docker container in detached mode with the environment variable:
 ```bash
