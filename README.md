@@ -1,6 +1,6 @@
 # n8n-docker
 
-Self-hosting n8n instance in a docker container on a Raspberry Pi running Ubuntu 24.04.1 LTS
+Self-hosting n8n instance in a docker container on a Raspberry Pi running Ubuntu 24.04.1 LTS and testing AI Agents on it.
 
 ## Requirements
 
