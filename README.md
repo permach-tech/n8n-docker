@@ -71,7 +71,7 @@ mkdir n8n
 cd n8n
 ```
 > **ℹ️ Notice**  
-> n8n uses SQLite by default, but you can use Postgres or MySQL (recommended). For simplicity, we will use SQLite.
+> n8n uses SQLite by default, but you can use Postgres or MySQL (recommended). For simplicity, this installation uses SQLite.
 
 > A challenge I had was getting webhooks to work correctly. Some of the docs recommend starting the n8n instance with the `-tunnel` environment variable; however, I was unable to get this working.
 
